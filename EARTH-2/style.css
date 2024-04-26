@@ -1,0 +1,577 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*1st container*/
+
+
+.container-1{
+    background-image: url(Banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.container-1 .contant-1{
+    margin: 0px 51px;
+    padding: 0px 20px;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 100px;
+}
+.contant-1 .inner-contant-1{
+    align-self: center;
+    margin: 10px 0px;
+}
+.inner-contant-1 ul{
+    display: flex;
+    list-style-type: none;
+}
+ul li{
+    padding: 0px 17px;
+}
+ul li a{   
+    font-family: "roboto";
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+}
+ul li a:hover{
+    color: rgb(44, 84, 29);
+    transition: all 0.3s;
+}
+
+
+.contant-2{
+    margin: 0px 101px;
+    margin-top: 6%;
+}
+.contant-2 .inner-container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    row-gap: 5px;
+}
+
+.inner-container .inner-contant-2{
+    text-align: center;
+}
+.inner-contant-2 h1{
+    color: rgb(44, 84, 29);
+    font-family: "jost";
+    font-weight: 550;
+    font-size: 80px;
+    letter-spacing: 10px;
+    line-height: 80px;
+}
+.inner-contant-2 h2{
+    color: black;
+    font-family: "jost";
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+.inner-contant-2 button{
+    background-color: rgb(116, 168, 74);
+    width: 168px;
+    height: 46px;
+    border: none;
+    font-family: "roboto";
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: white;
+    margin-top: 20px;
+}
+button:hover{
+    background-color: rgb(44, 84, 29);
+    transition: all 0.3s;
+}
+
+
+#click{
+    display: none;
+}
+
+
+.checkbtn i{
+    background-color: rgb(116, 168, 74);
+    height: 44px;
+    width: 44px;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    line-height: 44px;
+    cursor: pointer;
+    display: none;
+}
+
+#click:checked ~ .inner-contant-1 ul{
+    left: 0%;
+}
+
+
+@media(max-width:921px){
+    .inner-contant-1 ul{
+        position: absolute;
+        display: block;
+        background-color: white;
+        width: 100vw;
+        height: 100%;
+        top: 100px;
+        left: -100%;
+    }
+    .container-1{
+        height: 100vw;
+    }
+    ul li{
+        border-bottom: 1px dotted black;
+        border-radius: 0;
+        text-align: left;
+        margin: 20px 0px;
+        padding: 0% 20px;
+    }
+    .checkbtn i{
+        display: block;
+    }
+    
+    .container-1 .contant-1{
+        margin: 0px;
+    }
+    .inner-contant-2 h1{
+        font-size: 60px;
+    }
+    .inner-contant-2 h2{
+        font-size: 30px;
+    }
+    .inner-contant-2 button{
+        width: 130px;
+        height: 35px;
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+}
+
+
+@media(max-width:580px){
+    .inner-contant-2 h1{
+        font-size: 40px;
+    }
+    .inner-contant-2 h2{
+        font-size: 20px;
+    }
+    .inner-contant-2 button{
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+    .contant-2 .inner-container{
+        row-gap: 0px;
+        padding: 0px;
+    }
+    .contant-2{
+        margin: 0px 50px;
+        margin-top: 3%;
+    }
+    
+}
+@media(max-width:370px){
+    .contant-2{
+        margin: 0px 30px;
+        margin-top: 3%;
+    }
+    .inner-contant-2 h2{
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*2nd container*/
+
+
+
+.container-2{
+    margin: 80px 0px;
+}
+.container-2 .contant-2{
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+    column-gap: 20px;
+    margin: 0px 101px;
+    justify-content: center;
+}
+.contant-2 .inner-contant{
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 339px;
+    max-height: 572px;
+    padding: 20px;
+    
+}
+
+.contant-img img{
+    width: 25vw;
+    max-height: 100vh;
+}
+.contant-h4 h4{
+    font-size: 24px;
+    font-family: "jost";
+    margin-top: 20px;
+}
+.contant-para p{
+    font-size: 17px;
+    font-family: "roboto";
+    color: rgb(88, 88, 88);
+    line-height: 28px;
+}
+
+
+
+@media(max-width: 925px){
+    .contant-h4 h4{
+        font-size: 20px;
+        font-family: "jost";
+        margin-top: 20px;
+    }
+    .contant-para p{
+        font-size: 15px;
+        font-family: "roboto";
+        color: rgb(88, 88, 88);
+        line-height: 28px;
+    }
+    
+}
+
+@media(max-width: 850px){
+    .container-2{
+        margin: 50px 0px;
+    }
+    .container-2 .contant-2{
+        display: flex;
+        flex-direction: row;
+        row-gap: 20px;
+        column-gap: 20px;
+        margin: 0px 60px;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 770px){
+    .container-2 .contant-2{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        column-gap: 20px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        align-self: center;
+    }
+    .contant-2 .inner-contant{
+        max-height: 100%;
+        padding: 20px;
+        
+    }
+    .contant-img img{
+        width: 100%;
+        max-height: 100vh;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*3rd container*/
+.container-3{
+    margin: 80px 0px;
+}
+.container-3 .contant-3{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 101px;
+}
+.contant-3 .inner-contant-1{
+    padding: 20px 20px;
+    padding-right: 80px;
+    column-gap: 20px;
+    row-gap: 20px;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    align-self: center;
+}
+.inner-contant-1 h2{
+    font-size: 36px;
+    font-family: "jost";
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.inner-contant-1 p{
+    font-size: 17px;
+    font-family: "roboto";
+    color: rgb(88, 88, 88);
+    line-height: 28px;
+}
+.contant-3 .inner-contant-2{
+    padding: 20px;
+    height: 50%;
+    width: 50%;
+}
+.inner-contant-2 img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+@media(max-width: 925px){
+    .inner-contant-1 h2{
+        font-size: 30px;
+    }
+
+    .inner-contant-1 p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .container-3{
+        margin: 50px 0px;
+    }
+
+    .container-3 .contant-3{
+        display: flex;
+        flex-direction: row;
+        margin: 0px 50px;
+    }
+}
+
+
+@media(max-width: 770px){
+    
+    .container-3 .contant-3{
+        display: flex;
+        flex-direction: column;
+    }
+    .contant-3 .inner-contant-2{
+        padding: 20px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .contant-3 .inner-contant-1{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding-right: 20px;
+    }
+}
+
+
+
+
+
+
+/* 4th container*/
+
+
+.container-4{
+    background-image: url(Call-to-action.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container-4 .contant-4{
+    padding-top: 100px;
+    padding-bottom: 200px;
+    margin: 0px 300px;
+}
+.contant-4 .inner-contant-4{
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.inner-contant-4 .contant-h2 h2{
+    font-size: 41px;
+    font-family: "jost";
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: 500;
+    color: rgb(44, 84, 29);
+}
+.inner-contant-4 .contant-para p{
+    font-size: 17px;
+    font-family: "roboto";
+    color: rgb(88, 88, 88);
+    line-height: 28px;
+    text-align: center;
+}
+.inner-contant-4 .contant-button button{
+    background-color: rgb(116, 168, 74);
+    width: 221px;
+    height: 46px;
+    border: none;
+    font-family: "roboto";
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: white;
+    margin-top: 30px;
+    align-self: center;
+}
+.inner-contant-4 .contant-button{
+    text-align: center;
+}
+
+.inner-contant-4 .contant-button button:hover{
+    background-color: rgb(44, 84, 29);
+}
+
+
+
+
+@media(max-width: 990px){
+    .container-4 .contant-4{
+        padding-top: 70px;
+        padding-bottom: 140px;
+        margin: 0px 250px;
+    }
+}
+
+@media(max-width: 770px){
+    .inner-contant-4 .contant-h2 h2{
+        font-size: 35px;
+    }
+    .inner-contant-4 .contant-para p{
+        font-size: 15px;
+    }
+    .container-4 .contant-4{
+        padding-top: 50px;
+        padding-bottom: 100px;
+        margin: 0px 150px;
+    }
+}
+
+@media(max-width: 600px){
+    .container-4 .contant-4{
+        padding-top: 30px;
+        padding-bottom: 60px;
+        margin: 0px 70px;
+    }
+}
+
+
+
+
+
+
+/*footer*/
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 0px;
+    row-gap: 20px;
+    column-gap: 20px;
+    align-items: center;
+}
+footer .contant-footer ul{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+}
+footer .contant-footer ul li{
+    list-style: none;
+    padding: 0%;
+    padding-right: 10px;
+}
+footer .contant-footer ul li a{
+    font-size: 15px;
+    font-family: "roboto";
+    padding: 0px;
+}
+.contant-footer img{
+    max-width: 92px;
+    max-height: 18px;
+    margin: 20px 0px;
+}
+.contant-footer p{
+    margin: 20px 0px;
+    font-size: 17px;
+    font-family: "roboto";
+    color: rgb(88, 88, 88);
+}
+
+@media(max-width:700px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 0px;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    footer .contant-footer ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .contant-footer{
+        margin: 0px 0px;
+    }
+}
